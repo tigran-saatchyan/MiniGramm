@@ -2,28 +2,28 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Добавить пост</title>
+    <title>Add post</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
 <main>
 
-    <a href="/" class="link">Назад</a>
+    <a href="/" class="link">Back</a>
 
-    <h1>Добавить пост</h1>
+    <h1>Add post</h1>
 
     <form action="/post" method="POST" enctype="multipart/form-data">
-        <p>Картинка к посту</p>
+        <p>Picture</p>
         <div>
             <input type="file" name="picture">
         </div>
-        <p>Текст к посту</p>
+        <p>Post content</p>
         <div>
             <textarea name="content" rows="5"></textarea>
         </div>
 
         <div>
-            <input type="submit" value="Добавить" class="button">
+            <input type="submit" value="Add" class="button">
         </div>
     </form>
 
